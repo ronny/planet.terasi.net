@@ -1,0 +1,327 @@
+/*
+
+CSS for Planet Terasi
+http://planet.terasi.net
+
+By: Ronny Haryanto
+http://ronny.haryan.to
+
+Licensed under Creative Commons Attribution 2.0.
+http://creativecommons.org/licenses/by/2.0/
+
+$Id: terasi.css 102 2006-01-21 01:12:31Z ronny $
+
+*/
+
+/******************************************************************/
+/* general */
+/******************************************************************/
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #bbb;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+img {
+    padding: 5px;
+}
+
+img.wp-smiley {
+    padding-bottom: 0px;
+}
+
+a img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 1px dotted #ddd;
+    margin: 0 30px 0 25px;
+    color: #666;
+    padding-left: 8px;
+}
+
+:link {
+    color: #999700;
+}
+
+:visited {
+    color: #999700;
+}
+
+:link:hover, :visited:hover {
+    text-decoration: underline;
+}
+
+:link:active, :link:active {
+    color: #999700;
+}
+
+.noborder {
+    border: none;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+img.alignleft {
+    padding: 5px 5px 0 0;
+}
+
+img.alignright {
+    padding: 5px 0 0 5px;
+}
+
+del {
+    color: #bbb;
+}
+
+ins {
+    text-decoration: none;
+}
+
+/******************************************************************/
+/* sections */
+/******************************************************************/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #bbb;
+    color: #000000;
+}
+
+body {
+    background: url(images/bg.png) center repeat-y #bbb;
+}
+
+#page {
+    width: 900px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+#header {
+    background: #e0ee00;
+}
+
+#header h1 {
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#header img {
+    padding: 10px 10px 10px 20px;
+}
+
+#main {
+    background: #ffffff;
+    float: left;
+    width: 579px;
+    padding: 30px 40px 50px 40px;
+    border-right: 1px solid #eee;
+}
+
+#sidebar {
+    background: #ffffff;
+    float: right;
+    width: 200px;
+    padding: 30px 20px;
+    border-left: 1px solid #eee;
+    margin-left: -2px;
+}
+
+#footer {
+    background: #fff;
+    clear: both;
+    padding: 10px;
+}
+
+#footer p {
+    font-size: 8px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+#pagetitle {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tagline {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.itemheader {
+    font-size: 22px;
+    padding: 25px 0 0 0;
+    font-weight: bold;
+    margin: 0;
+    /* border-top: dotted 2px #f0f0f0; */
+}
+
+.itemheader a {
+    text-decoration: none;
+    border: none;
+}
+
+.itemdate {
+    margin: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0;
+    padding-bottom: 1px;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #666;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.itemchannel {
+}
+
+.face {
+    float: right;
+    margin-top: -45px;
+    padding: 0 5px;
+}
+
+.itemtitle {
+}
+
+.itemauthor {
+    color: #999700;
+    font-weight: bold;
+}
+
+.entry {
+    text-align: justify;
+    padding-bottom: 25px;
+}
+
+.entrymetadata {
+    font-size: 12px;
+    font-style: italic;
+    color: #aaa;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+.entrycontent, .entrycontent p {
+    line-height: 1.5em;
+}
+
+#sidebar p {
+    color: #666;
+    line-height: 1.5em;
+}
+
+#sidebar h2 {
+}
+
+.sidebarbox {
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.sidebarbox p {
+    text-align: justify;
+}
+
+#aboutbox p {
+}
+
+#sidebar ul li a img {
+    border: none;
+    padding: 2px 0;
+}
+
+#sidebar ul li {
+    line-height: 1.5em;
+}
+
+#subscriptions {
+}
+
+.subscription {
+}
+
+#feeds {
+}
+
+.feed {
+}
+
+#links {
+}
+
+.link {
+}
+
+#searchform {
+}
+
+.textbox {
+}
+
+.button {
+}
+
+#poweredbylist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.poweredby {
+}
+
+#frappr {
+    margin: 20px auto auto 30px;
+}
+
+.barhandle {
+}
+
+.bhopened {
+    background: url(images/open.png) bottom right no-repeat;
+}
+
+.bhclosed {
+    background: url(images/close.png) bottom right no-repeat;
+}

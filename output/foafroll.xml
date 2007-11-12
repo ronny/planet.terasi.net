@@ -1,0 +1,1043 @@
+<?xml version="1.0"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+<foaf:Group>
+	<foaf:name>Planet Terasi</foaf:name>
+	<foaf:homepage>http://planet.terasi.net/</foaf:homepage>
+	<rdfs:seeAlso rdf:resource="" />
+
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>'Sarapan Ekonomi,</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://sarapanekonomi.blogspot.com/index.html">
+					<dc:title>'Sarapan Ekonomi,</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Abe Poetra</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.abepoetra.com">
+					<dc:title>** Abe Poetra **</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Achmad Husni Thamrin</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://jaringan.info">
+					<dc:title>Jaringan.Info</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Adinoto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://adinoto.org">
+					<dc:title>adinoto's blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Agus Setiawan</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://agusset.blogspot.com">
+					<dc:title>my opinion</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ahmad SS Ramadhana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://doeljoni.blogsome.com">
+					<dc:title>Publisitas goBLOG</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Alex Budiyanto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://alexbudiyanto.web.id">
+					<dc:title>AlexBudiyanto.Web.ID</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Andika Triwidada</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://andika-lives-here.blogspot.com">
+					<dc:title>Why Blog?</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Andry S Huzain</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://andryshuzain.com/">
+					<dc:title>Andry S Huzain</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Antony Pranata</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://opinion.antonypranata.com">
+					<dc:title>Antony's Personal Opinion</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ardian Lazuardi</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://lazuardi.blogsome.com">
+					<dc:title>YaLB</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Arif Widianto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://arifwidi.com/">
+					<dc:title>Arif Widianto personal website</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Aris Priyantoro</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://aris.pituruh.com">
+					<dc:title>Sevens's Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ariya Hidayat</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://ariya.blogspot.com">
+					<dc:title>D.C.T.W.Y.C.D.T</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Asia Tech Weblog</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.theasiatech.com">
+					<dc:title>The Asia Tech</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Bank Al</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://aalinazar.wordpress.com">
+					<dc:title>Namaku Bank Al</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Beast</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://sum.ldap.or.id/blog">
+					<dc:title>i n s o m n i a c</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Benny Chandra</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://bennychandra.com">
+					<dc:title>Benny Chandra dot com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Boy Avianto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://home.avianto.com/">
+					<dc:title>life's like this - avianto's journal</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Budi Baliwae</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.gue.or.id">
+					<dc:title>blog.gue</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Budi Putra</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.thegadgetnet.com">
+					<dc:title>TheGadget</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Budi Rahardjo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://rahard.wordpress.com">
+					<dc:title>Budi Rahardjo</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Budi Rahardjo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://gbt.blogspot.com">
+					<dc:title>Gerakan Bawah Tanah - Mr. GBT</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Budiwijaya</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://gadget.rootbox.or.id">
+					<dc:title>Gadget/Stuff - gadget techie stuff</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>David Sudjiman</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.davidsudjiman.info">
+					<dc:title>David Sudjiman</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Dudi Gurnadi</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://dgk.or.id">
+					<dc:title>#!/Dudi/Gurnadi</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Eko Juniarto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://data.startrek.or.id">
+					<dc:title>i solemnly swear that i'm up to no good</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Eko Juniarto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://ryosaeba.wordpress.com">
+					<dc:title>things left unsaid</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Eko Pramuyanto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://maseko.com">
+					<dc:title>maseko's weblog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Enda Nasution</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://enda.goblogmedia.com/">
+					<dc:title>Enda Nasution's Weblog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Enda Nasution</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://enda.goblogmedia.com/quicklinks/">
+					<dc:title>Enda Quicklinks</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ervan Setiawan</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Fatih Syuhud</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://afsyuhud.blogspot.com">
+					<dc:title>Blogger Indonesia A. Fatih Syuhud Weblog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Firman Firdaus</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.denbag.us">
+					<dc:title>dialogbox | Firman Firdaus' personal weblog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Gempur SR</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://projection.wgs84.net/">
+					<dc:title>projection | gempur`s weblogs</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Harry Sufehmi</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://harry.sufehmi.com">
+					<dc:title>harry.sufehmi.com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>I Gede Wijaya</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://jaya.duniasemu.org">
+					<dc:title>Plat Æ</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>I Made Wiryana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://wiryana.pandu.org/">
+					<dc:title>I Made Wiryana</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Idban Secandri</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://secandri.com/blog">
+					<dc:title>!Secandri.com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ikhlasul Amal</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://direktif.web.id/">
+					<dc:title>#direktif</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Irwin Day</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://tayuang.blogspot.com">
+					<dc:title>iWin Notes</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>It Pin</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.itpin.com/blog">
+					<dc:title>... tentang inovasi dan berpikir holistik</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Julius Sirait</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.bStrap.com/">
+					<dc:title>bStrap</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Kemas Yunus Antonius</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.kyantonius.com/weblog">
+					<dc:title>kyantonius.com - daily babblings!</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Khairul Ummah</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://khairulu.blogsome.com">
+					<dc:title>Inspirasi Pagi</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Kuncoro Wastuwibowo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://kun.co.ro">
+					<dc:title>Kuncoro++</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Kuncoro Wastuwibowo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://kuncoro.wordpress.com">
+					<dc:title>Кунчоро++</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Masim Vavai Sugianto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://vavai.com/blog/">
+					<dc:title>Blog Vavai</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Merdeka Blog</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.merdeka.or.id">
+					<dc:title>Merdeka Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Mohammad DAMT</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://aksi.mdamt.net/log">
+					<dc:title>Mohammad DAMT</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Muhammad Rofiq</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.mrofiq.com">
+					<dc:title>Life Coder</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nana Suryana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://suryana.or.id">
+					<dc:title>suryana.or.id</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nanda Firdausi</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.satukubik.net/">
+					<dc:title>satukubik.net - article</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nurul Wibawa Cahya</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://nurulwibawacahya.blogspot.com">
+					<dc:title>:: Cahyo's Blog ::</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Oskar Syahbana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://permagnus.com">
+					<dc:title>Permagnus.com: Financial site with a human touch</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Paman Tyo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blogombal.org">
+					<dc:title>blogombal</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Pipit</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://pipit.wordpress.com">
+					<dc:title>Pipit's Blog @ Wordpress.com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Polisi EYD</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://weblogs.or.id/polisieyd/">
+					<dc:title>Polisi EYD - Weblogs.or.id</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Polisi EYD</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://weblogs.or.id/polisieyd-lema/">
+					<dc:title>Polisi EYD: Lema - Weblogs.or.id</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Priyadi Iman Nurcahyo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://priyadi.net">
+					<dc:title>Priyadi's Place</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Pujiono</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://jalansutera.com/fquick_feed.php">
+					<dc:title>JalanSutera.com - SideNotes</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Pujiono</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://jalansutera.com">
+					<dc:title>JalanSutera.com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rahmat M. Samik-Ibrahim</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://rms46.blogspot.com">
+					<dc:title>Rahmat M. Samik-Ibrahim</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rendy Anthony</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://solyaris.wordpress.com">
+					<dc:title>solaris</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rendy Maulana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.rendymaulana.com">
+					<dc:title>Rendy Maulana dot Com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Reza Muhammad</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://razorblade.or.id">
+					<dc:title>Razorblade: Gadgets to the fullest</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Risiyanto Budi</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://risiyanto.budi.or.id/blog">
+					<dc:title>catatan aris blogs</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Romi Satria Wahono</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://romisatriawahono.net">
+					<dc:title>RomiSatriaWahono.Net</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ronny Haryanto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://ronny.haryan.to">
+					<dc:title>ronny.haryan.to</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Steven Haryanto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://people.masterwebnet.com/steven/blog">
+					<dc:title>Steven Haryanto</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Sugeng Widodo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://elangmaya.lensa.or.id">
+					<dc:title>Elangmaya</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Thomas Arie Setiawan</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://orangescale.net">
+					<dc:title>Orangescale.NET</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Wahyu Wijanarko</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://wahyu.com">
+					<dc:title>Wahyu Wijanarko</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>William Pramana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://wpram.com/">
+					<dc:title>William Computer Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Willy Sudiarto Raharjo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://willysr.blogspot.com">
+					<dc:title>My Personal Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Yulian F. Hendriyana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://yulian.firdaus.or.id">
+					<dc:title>Jay adalah Yulian</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>blogindonesia</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blogindonesia.wordpress.com">
+					<dc:title>Indonesian Best Blogs Directory</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>gadnux</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://gadnux.jeefuu.net">
+					<dc:title>[[ gadnux ]]</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>gobzip</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://gobzip.blogsome.com">
+					<dc:title>weblog go bZip</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+
+</foaf:Group>
+</rdf:RDF>

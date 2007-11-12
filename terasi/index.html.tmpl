@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title><TMPL_VAR name></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">" />
+<meta name="keywords" content="blogs, planet terasi, terasi, indonesian blogs, indonesia, blog indonesia, agregat blog, teknologi, blog teknologi" />
+<link rel="stylesheet" href="terasi.css" type="text/css" />
+<link rel="icon" href="images/favicon.png" type="image/png" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss20.xml" />
+<script type="text/javascript" language="javascript">
+function toggle(id, header)
+{
+    var b = document.getElementById(id);
+    if (b.style.display == "block")
+    {
+	b.style.display = "none";
+	header.className = "itemdate barhandle bhclosed";
+    }
+    else
+    {
+	b.style.display = "block";
+	header.className = "itemdate barhandle bhopened";
+    }
+}
+</script>
+</head>
+
+<body>
+
+<div id="page">
+    <div id="header">
+	<!--
+	<h1 id="pagetitle"><TMPL_VAR name></h1>
+	<p id="tagline">Think.&nbsp;Read.&nbsp;Write.</p>
+	-->
+	<img src="images/terasi.png" alt="Planet Terasi" id="terasilogoimg" />
+	<!--[if IE]>
+	<script type="text/javascript">
+	document.getElementById('terasilogoimg').src = "images/terasi-ie.png";
+	document.getElementById('page').style.width = "801px";
+	</script>
+	<![endif]-->
+    </div>
+    <div id="main">
+	<TMPL_LOOP Items>
+	    <TMPL_IF new_date_first>
+		<h2 class="itemdate barhandle bhopened"
+		    onclick="toggle('<TMPL_VAR new_date_raw>', this)"><TMPL_VAR new_date></h2>
+		<div id="<TMPL_VAR new_date_raw>" style="display:block">
+	    <TMPL_ELSE>
+		<TMPL_IF new_date>
+		    </div>
+		    <h2 class="itemdate barhandle bhopened"
+			onclick="toggle('<TMPL_VAR new_date_raw>', this)"><TMPL_VAR new_date></h2>
+		    <div id="<TMPL_VAR new_date_raw>" style="display:block">
+		</TMPL_IF>
+	    </TMPL_IF>
+	    <h3 class="itemheader"><a href="<TMPL_VAR link ESCAPE="HTML">"
+		class="itemtitle"><TMPL_VAR title></a>
+	    </h3>
+	    <TMPL_IF channel_face>
+		<img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">"
+		    width="<TMPL_VAR channel_facewidth ESCAPE="HTML">"
+		    height="<TMPL_VAR channel_faceheight ESCAPE="HTML">"
+		    alt="" />
+	    </TMPL_IF>
+	    <div class="entry">
+		<p class="entrymetadata">
+		    by <a href="<TMPL_VAR channel_link ESCAPE="HTML">"
+			title="<TMPL_VAR channel_name>:&nbsp;<TMPL_VAR channel_title>"
+			class="itemauthor"><TMPL_VAR channel_shortname></a>
+		    <TMPL_IF category> on <TMPL_VAR category></TMPL_IF>
+		    at <TMPL_VAR date>&nbsp;UTC. &mdash;
+		    <a href="http://del.icio.us/post?url=<TMPL_VAR link ESCAPE="URL">">del.icio.us</a>
+		    &mdash;
+		    <a href="http://digg.com/submit?phase=2&url=<TMPL_VAR link ESCAPE="URL">">digg</a>
+		    &mdash;
+		    <a href="http://www.technorati.com/cosmos/search.html?url=<TMPL_VAR link ESCAPE="URL">">other blog's comments</a>
+		</p>
+		<div class="entrycontent"><TMPL_VAR content></div>
+	    </div>
+	</TMPL_LOOP>
+	</div>
+    </div> <!-- main -->
+
+    <div id="sidebar">
+
+	<div class="sidebarbox" id="aboutbox">
+
+	    <h2>About Planet Terasi</h2>
+
+	    <p>Planet Terasi is an aggregate blog of Indonesian blogs about
+	    <em>blogging</em> and <em>technology</em> in general with a
+	    preference for original <em>Indonesian related technology
+	    content</em>. Planet Terasi may contain articles in Bahasa
+	    Indonesia and in English.</p>
+
+	    <p>Planet Terasi is maintained by <a
+	    href="http://ronny.haryan.to">Ronny&nbsp;Haryanto</a>.
+	    </p>
+
+	    <p>Please <a href="contact.php">contact the maintainer</a> if
+	    you have any questions, feedback, comments.</p>
+
+	    <p>Planet Terasi is updated every hour and was most recently
+	    updated at <TMPL_VAR date> <abbr
+		title="Coordinated Universal Time (GMT)">UTC</abbr>.</p>
+
+	</div>
+
+	<div class="sidebarbox">
+
+	    <h2>Planet Inhabitants</h2>
+
+	    <ul id="subscriptions">
+		<TMPL_LOOP Channels>
+		<li class="subscription"><a href="<TMPL_VAR link ESCAPE="HTML">"
+		    title="<TMPL_VAR title>"><TMPL_VAR name></a>
+		    <a href="<TMPL_VAR url ESCAPE="HTML">">(feed)</a></li>
+		</TMPL_LOOP>
+	    </ul>
+
+	</div>
+
+	<div class="sidebarbox">
+
+	    <h2>Syndication</h2>
+
+	    <ul id="feeds">
+		<li class="feed"><a href="rss20.xml">RSS 2.0</a></li>
+		<li class="feed"><a href="rss10.xml">RSS 1.0</a></li>
+		<li class="feed"><a href="opml.xml">OPML</a></li>
+		<li class="feed"><a href="foafroll.xml">FOAF</a></li>
+	    </ul>
+	
+	</div>
+
+	<div class="sidebarbox">
+
+	    <h2>You Might Be Interested In</h2>
+
+	    <ul id="links">
+                <li class="link"><a href="http://www.google.com/coop/cse?cx=005193002231605011723:sp9bfrdegmq">Indonesian Blogs Search</a></li>
+		<li class="link"><a href="http://www.w3.org/">W3</a></li>
+		<li class="link"><a href="http://www.bloglines.com/">Bloglines</a></li>
+		<li class="link"><a href="http://del.icio.us/">Del.icio.us</a></li>
+		<li class="link"><a href="http://www.flickr.com/">Flickr</a></li>
+		<li class="link"><a href="http://wordpress.org/">WordPress</a></li>
+		<li class="link"><a href="http://movabletype.org/">MovableType</a></li>
+		<li class="link"><a href="http://www.technorati.com/">Technorati</a></li>
+		<li class="link"><a href="http://wholinkstome.com/">Who Links To Me?</a></li>
+		<li class="link"><a
+		    href="http://blogshares.com/blogs.php?blog=http%3A%2F%2Fplanet.terasi.net%2F&amp;user=28316">BlogShares</a></li>
+		<li class="link"><a
+		    href="http://teknoblogia.blogspot.com/">teknoblogia</a></li>
+	    </ul>
+
+	    <div id="frappr"><a href="http://www.frappr.com/terasi"><img
+	    src="http://www.frappr.com/i/frapper_sticker.gif" border="0"
+	    alt="Check out our Frappr!" title="Check out our Frappr!"></a></div>
+	
+	</div>
+
+	<div class="sidebarbox">
+
+	    <h2>Google Search</h2>
+
+	    <div id="searchbox">
+		<form method="get" action="http://www.google.com/search" id="searchform">
+		    <input type="text" class="textbox" maxlength="256"
+			size="15" name="q" />
+		    <input type="submit" class="button" value="Go">
+		</form>
+	    </div>
+	
+	</div>
+
+	<div class="sidebarbox">
+
+	    <h2>Disclaimers</h2>
+
+	    <p><small>All blog posts are the personal views of the
+	    inhabitants and do not necessarily reflect Planet Terasi and its
+	    maintainer's views. Planet Terasi and its maintainer may not be
+	    held responsible for the contents of the inhabitants' individual
+	    blogs. Please consult the individual blogs for licensing and
+	    copyright information.</small></p>
+	
+	</div>
+
+	<div class="sidebarbox">
+
+	    <h2>Powered By</h2>
+
+	    <ul id="poweredbylist">
+		<li class="poweredby"><a href="http://www.planetplanet.org/"
+		    class="noborder"><img
+		    src="images/planet.png" width="80" height="15" alt="Planet"
+		    border="0"></a></li>
+		<li class="poweredby"><a href="http://indoglobal.com/"
+		    class="noborder"><img
+		    src="images/indoglobal-88x21.png"
+		    width="88" height="31" alt="Hosted on indoglobal.com"
+		    border="0"></a></li>
+	    </ul>
+
+	</div>
+    
+    </div> <!-- sidebar -->
+
+    <div id="footer">
+     <p>Congratulations, you have reached the bottom of the page! You can
+     take a break now.</p>
+     <p>This page is best viewed with your eyes opened. I use Myriad Pro
+     font, but you can choose whatever you like in your browser's
+     preferences.</p>
+    </div>
+
+</div> <!-- page -->
+
+</body>
+</html>
