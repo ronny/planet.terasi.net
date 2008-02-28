@@ -43,10 +43,15 @@ your inquiry. I usually review suggestions about once a month. More urgent
 inquiries usually get quicker response from me.</li> 
 <li>There are no fixed criteria for inclusion in Planet Terasi, in general
 as long as your blog is in line with Planet Terasi's general theme
-(technology and blogging with preference for original Indonesian-related
+(technology with <strong>preference</strong> for original Indonesian-related
  contents), then I will most likely add it. If it's
 not really in line with Planet Terasi's topics/themes but you think it
 should be added, let me know anyway and explain in the comments your reasons.</li>
+<li>I will NOT add blogs that are: specifically designed/written to increase its own traffic, splogs
+(spam blogs), mostly SEO stuff, mainly personal posts, religious, political, mainly tutorials,
+highly technical content (e.g. lots of source code). Discussions on <strong>why</strong>
+something is/should (not) be done is much more interesting than <strong>how</strong> to do
+something.</li>
 <li>If you don't want to syndicate every content on your blog in Planet
 Terasi, then you can dedicate a particular category/tag for your posts that are
 going to be included in Planet Terasi. This will work as long as there is a
