@@ -36,6 +36,7 @@ pre, code {
 
 img {
     padding: 5px;
+    overflow: hidden;
 }
 
 img.wp-smiley {
