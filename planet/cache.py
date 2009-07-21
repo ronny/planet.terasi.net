@@ -89,8 +89,8 @@ class CachedInfo:
                 continue
 
             keys.append(key)
-            self._cache[cache_key] = self._value[key]
-            self._cache[cache_key + " type"] = self._type[key]
+            self._cache[str(cache_key)] = self._value[str(key)]
+            self._cache[str(cache_key) + " type"] = self._type[str(key)]
 
         if self._root:
             keys_key = " keys"
