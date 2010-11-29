@@ -1,0 +1,11 @@
+# use glob syntax.
+syntax: glob
+
+*.tmplc
+*.pyc
+*~
+cache/
+
+# switch to regexp syntax.
+#syntax: regexp
+#^output/.*\.xml/
