@@ -4,7 +4,9 @@ syntax: glob
 *.tmplc
 *.pyc
 *~
-cache/
+cache/*
+output/*.html
+output/*.xml
 
 # switch to regexp syntax.
 #syntax: regexp
