@@ -5,8 +5,9 @@ syntax: glob
 *.pyc
 *~
 cache/*
-output/*.html
+output/index.html
 output/*.xml
+output/contact.php
 
 # switch to regexp syntax.
 #syntax: regexp
