@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.5
+#!/usr/bin/env python
 """The Planet aggregator.
 
 A flexible and easy-to-use aggregator for generating websites.

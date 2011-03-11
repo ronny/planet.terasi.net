@@ -30,9 +30,8 @@ __all__ = ("cache", "feedparser", "htmltmpl", "logging",
 
 
 import os
-import md5
 import time
-import dbhash
+import dbm
 import re
 
 try: 
@@ -40,6 +39,14 @@ try:
 except:
     def escape(data):
         return data.replace("&","&amp;").replace(">","&gt;").replace("<","&lt;")
+
+try:
+    import hashlib
+    md5_constructor = hashlib.md5
+except:
+    import md5
+    md5_constructor = md5.new
+
 
 # Version information (for generator headers)
 VERSION = ("Planet/%s +http://www.planetplanet.org" % __version__)
@@ -510,7 +517,7 @@ class Channel(cache.CachedInfo):
         if not os.path.isdir(planet.cache_directory):
             os.makedirs(planet.cache_directory)
         cache_filename = cache.filename(planet.cache_directory, url)
-        cache_file = dbhash.open(cache_filename, "c", 0666)
+        cache_file = dbm.open(cache_filename, "c", 0666)
 
         cache.CachedInfo.__init__(self, cache_file, url, root=1)
 
@@ -748,10 +755,10 @@ class Channel(cache.CachedInfo):
                 entry_id = cache.utf8(entry.link)
             elif entry.has_key("title"):
                 entry_id = (self.url + "/"
-                            + md5.new(cache.utf8(entry.title)).hexdigest())
+                            + md5_constructor(cache.utf8(entry.title)).hexdigest())
             elif entry.has_key("summary"):
                 entry_id = (self.url + "/"
-                            + md5.new(cache.utf8(entry.summary)).hexdigest())
+                            + md5_constructor(cache.utf8(entry.summary)).hexdigest())
             else:
                 log.error("Unable to find or generate id, entry ignored")
                 continue
@@ -844,7 +851,7 @@ class NewsItem(cache.CachedInfo):
 
         self._channel = channel
         self.id = id_
-        self.id_hash = md5.new(id_).hexdigest()
+        self.id_hash = md5_constructor(id_).hexdigest()
         self.date = None
         self.order = None
         self.content = None

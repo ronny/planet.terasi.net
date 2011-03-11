@@ -98,8 +98,10 @@ class CachedInfo:
             keys_key = self._id
 
         self._cache[keys_key] = " ".join(keys)
-        if sync:
-            self._cache.sync()
+
+        # N/A for dbm.
+        # if sync:
+        #     self._cache.sync()
 
     def cache_clear(self, sync=1):
         """Remove information from the cache."""
@@ -119,8 +121,9 @@ class CachedInfo:
             del(self._cache[cache_key])
             del(self._cache[cache_key + " type"])
 
-        if sync:
-            self._cache.sync()
+        # N/A for dbm.
+        # if sync:
+        #     self._cache.sync()
 
     def has_key(self, key):
         """Check whether the key exists."""

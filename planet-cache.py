@@ -12,7 +12,7 @@ __license__ = "Python"
 import os
 import sys
 import time
-import dbhash
+import dbm
 import ConfigParser
 
 import planet
@@ -116,10 +116,10 @@ if __name__ == "__main__":
 
     # Open the cache file directly to get the URL it represents
     try:
-        db = dbhash.open(cache_file)
+        db = dbm.open(cache_file)
         url = db["url"]
         db.close()
-    except dbhash.bsddb._db.DBError, e:
+    except dbm.error, e:
         print >>sys.stderr, cache_file + ":", e.args[1]
         sys.exit(1)
     except KeyError:
