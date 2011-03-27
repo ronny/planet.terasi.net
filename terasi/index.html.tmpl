@@ -131,24 +131,12 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="jquery-1.5.1.min.js">\x3C/script>')</script>
 <script src="jquery.timeago.js"></script>
-<script src="jquery.isotope.min.js"></script>
 <script>
   var _gaq=[['_setAccount','UA-5657485-1'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
   s.parentNode.insertBefore(g,s)}(document,'script'));
   $("time").timeago();
-  $("#page #main").isotope({
-    itemSelector: 'article',
-    layoutMode: 'masonry'
-  });
-  var _n = 0;
-  $(window).bind('scroll', function(){
-    _n += 1;
-    if (_n < 200 && _n % 10 == 0) {
-      $("#page #main").isotope('reLayout');
-    }
-  });
 </script>
 </body>
 </html>
