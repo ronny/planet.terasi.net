@@ -7,7 +7,6 @@ syntax: glob
 cache/*
 output/index.html
 output/*.xml
-output/contact.php
 
 # switch to regexp syntax.
 #syntax: regexp
