@@ -12,7 +12,7 @@ if ((array_key_exists('REMOTE_ADDR', $_SERVER) && in_array($_SERVER['REMOTE_ADDR
     (array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER) && in_array($_SERVER['HTTP_X_FORWARDED_FOR'], $shitlist)) ||
     (array_key_exists('blogurl', $_POST) && preg_match('/(casino|adult|viagra|cialis|valium|lorazepam|tramadol|phentermine|ringtone)/i',$_POST['blogurl'])) ||
     (array_key_exists('email', $_POST) && preg_match('/goldfish?ka/i',$_POST['email'])) ||
-    (array_key_exists('comments', $_POST) && preg_match('/<a href=\\\?["\']?\s*https?:/i', $_POST['comments'])) ||
+    (array_key_exists('comments', $_POST) && preg_match('/(<a href=\\\?["\']?\s*https?:|goldfishka)/i', $_POST['comments'])) ||
     (!empty($_POST['blogurl']) && ($_POST['blogurl'] === $_POST['feedurl'])))
 {
     die("Spamming is a sin. You won't enjoy your dirty money.\n");
