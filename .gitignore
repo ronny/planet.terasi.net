@@ -1,17 +1,9 @@
-# use glob syntax.
-syntax: glob
-
 *.tmplc
 *.pyc
 *~
 cache/*
-
 # These are automatically generated from templates (yes, including
 # contact.php):
 output/*.html
 output/contact.php
 output/*.xml
-
-# switch to regexp syntax.
-#syntax: regexp
-#^output/.*\.xml/
