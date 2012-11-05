@@ -1,7 +1,7 @@
 *.tmplc
 *.pyc
 *~
-cache/*
+cache/
 # These are automatically generated from templates (yes, including
 # contact.php):
 output/*.html
