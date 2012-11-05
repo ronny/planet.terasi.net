@@ -1,9 +1,9 @@
 *.tmplc
 *.pyc
 *~
+
 cache/
-# These are automatically generated from templates (yes, including
-# contact.php):
-output/*.html
-output/contact.php
-output/*.xml
+
+# These are automatically generated from templates:
+static/*.html
+static/*.xml

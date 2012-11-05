@@ -1,32 +1,3 @@
-<?php
-$shitlist = array(
-    '203.247.145.10',
-    '220.226.63.254',
-    '198.133.178.133',
-    '206.204.190.33',
-    '72.232.228.106',
-    '72.237.17.120',
-    '93.157.169.18',
-);
-if ((array_key_exists('REMOTE_ADDR', $_SERVER) && in_array($_SERVER['REMOTE_ADDR'], $shitlist)) ||
-    (array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER) && in_array($_SERVER['HTTP_X_FORWARDED_FOR'], $shitlist)) ||
-    (array_key_exists('blogurl', $_POST) && preg_match('/(casino|adult|viagra|cialis|valium|lorazepam|tramadol|phentermine|ringtone)/i',$_POST['blogurl'])) ||
-    (array_key_exists('email', $_POST) && preg_match('/goldfish?ka/i',$_POST['email'])) ||
-    (array_key_exists('comments', $_POST) && preg_match('/(<a href=\\\?["\']?\s*https?:|goldfishka)/i', $_POST['comments'])) ||
-    (!empty($_POST['blogurl']) && ($_POST['blogurl'] === $_POST['feedurl'])))
-{
-    die("Spamming is a sin. You won't enjoy your dirty money.\n");
-}
-if (isset($_SERVER['force_no_vary']) &&
-    isset($_SERVER['nokeepalive']) &&
-    isset($_SERVER['ssl_unclean_shutdown']))
-{
-    die("You think I'm stupid, bitch?\n");
-}
-ini_set("display_errors", "Off");
-header("Content-type: text/html; charset=utf-8");
-echo '<?xml version="1.0"?>';
-?>
 <!doctype html>
 <html>
 <head>
@@ -36,12 +7,12 @@ echo '<?xml version="1.0"?>';
   <meta name="description" content="Planet Terasi is an aggregate blog about technology in general with a preference for original Indonesian-related technology content.">
   <meta name="author" content="Ronny Haryanto">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/favicon.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="alternate" href="/rss20.xml">
-  <link rel="stylesheet" href="terasi.css">
-  <link rel="stylesheet" media="handheld" href="handheld.css">
-  <script src="http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js"></script>
+  <link rel="icon" href="{{url_for("static", filename="images/favicon.png")}}">
+  <link rel="apple-touch-icon" href="{{url_for("static", filename="images/apple-touch-icon.png")}}">
+  <link rel="alternate" href="{{url_for("static", filename="rss20.xml")}}">
+  <link rel="stylesheet" href="{{url_for("static", filename="terasi.css")}}">
+  <link rel="stylesheet" media="handheld" href="{{url_for("static", filename="handheld.css")}}">
+  <script src="{{url_for("static", filename="modernizr.js")}}"></script>
   <script type="text/javascript" src="http://use.typekit.com/isv0gey.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
@@ -50,14 +21,14 @@ echo '<?xml version="1.0"?>';
 <section id="page">
   <header>
     <div class="wrap">
-      <h1 id="title"><a href="http://planet.terasi.net">Planet Terasi</a></h1>
+      <h1 id="title"><a href="{{url_for("index")}}">Planet Terasi</a></h1>
       <h2 id="tagline">Think.&nbsp;Read.&nbsp;Write.</h2>
 
       <nav>
         <ul>
           <li class="about"><a href="#about">About</a></li>
           <li class="contributors"><a href="#contributors">Contributors</a></li>
-          <li class="contact"><a href="contact.php">Contact</a></li>
+          <li class="contact"><a href="contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -72,7 +43,7 @@ echo '<?xml version="1.0"?>';
       <ul>
       <li>I can't guarantee when or if I will add/remove your blog or respond to
       your inquiry. I usually review suggestions about once a month. More urgent
-      inquiries usually get quicker response from me.</li> 
+      inquiries usually get quicker response from me.</li>
       <li>There are no fixed criteria for inclusion in Planet Terasi, in general
       as long as your blog is in line with Planet Terasi's general theme
       (technology with <strong>preference</strong> for original Indonesian-related
@@ -93,33 +64,6 @@ echo '<?xml version="1.0"?>';
 
       <p>Thanks,<br/>Ronny</p>
 
-      <?php if ($_POST['submitted'] == 'yes'): ?>
-      <?php
-      $body = "Planet Terasi Feedback\n\n";
-      $body .= "About: " . $_POST['about'] . "\n";
-      $body .= "From: " . $_POST['name'] . " <" . $_POST['email'] . ">\n";
-      $body .= "Blog URL: " . $_POST['blogurl'] . "\n";
-      $body .= "Feed URL: " . $_POST['feedurl'] . "\n";
-      $body .= "Comments:\n". $_POST['comments']."\n\n------\n\n";
-
-      $body .= "SERVER variables:\n";
-      foreach($_SERVER as $key => $val)
-      {
-          $body .= "$key:\t\t\t$val\n";
-      }
-
-      if (mail("ronny@haryan.to", "Planet Terasi Feedback", $body))
-      {
-          echo "<p>Message has been sent. Thanks.</p>";
-      }
-      else
-      {
-          echo "<p>Message was NOT sent. Sorry. Please try again later.</p>";
-      }
-
-      ?>
-      <?php else: ?>
-
       <form method="POST" name="frm" id="frm">
       <input type="hidden" name="submitted" value="yes" />
 
@@ -135,31 +79,25 @@ echo '<?xml version="1.0"?>';
       </select></p>
 
       <p><span class="q">Your name:</span><br />
-      <input type="text" name="name" id="name" size="40"
-          value="<?php echo htmlentities($_POST['name']);?>" /></p>
+      <input type="text" name="name" id="name" size="40"/></p>
 
       <p><span class="q">Your email address:</span><br />
-      <input type="text" name="email" id="email" size="40"
-          value="<?php echo htmlentities($_POST['email']);?>" /></p>
+      <input type="text" name="email" id="email" size="40"/></p>
 
       <p><span class="q">The URL of the blog:</span><br />
-      <input type="text" name="blogurl" id="blogurl" size="60"
-          value="<?php echo htmlentities($_POST['blogurl']);?>" /></p>
+      <input type="text" name="blogurl" id="blogurl" size="60"/></p>
 
       <p><span class="q">The URL of the RSS/Atom feed of the blog:</span><br />
-      <input type="text" name="feedurl" id="feedurl" size="60"
-          value="<?php echo htmlentities($_POST['feedurl']);?>" /></p>
+      <input type="text" name="feedurl" id="feedurl" size="60"/></p>
 
       <p><span class="q">Comments or reasons:</span><br />
-      <textarea rows="5" cols="60" id="comments" name="comments"><?php
-          echo htmlentities($_POST['comments']);?></textarea></p>
+      <textarea rows="5" cols="60" id="comments" name="comments"></textarea>
+      </p>
 
       <p><input type="submit" value="Submit" /></p>
       </form>
 
-      <?php endif; ?>
-
-      <p><a href="http://planet.terasi.net/">Go Back To Planet Terasi</a></p>
+      <p><a href="/">Go Back To Planet Terasi</a></p>
     </section>
 
   </section>
@@ -180,10 +118,6 @@ echo '<?xml version="1.0"?>';
       <p>Planet Terasi is maintained by <a
       href="http://ronny.haryan.to">Ronny&nbsp;Haryanto</a>.
       </p>
-
-      <p>Planet Terasi is updated every hour and was most recently
-      updated at <time datetime="<TMPL_VAR date_iso>"><TMPL_VAR date> <abbr
-      title="Coordinated Universal Time (GMT)">UTC</abbr></time>.</p>
 
       <a href="#top" class="top">&uarr;</a>
     </section>
@@ -215,22 +149,6 @@ echo '<?xml version="1.0"?>';
         <li><a href="foafroll.xml">FOAF</a></li>
       </ul>
 
-      <a href="#top" class="top">&uarr;</a>
-    </section>
-
-    <section id="contributors">
-      <a name="contributors"></a>
-      <header>
-        <h2>Contributors</h2>
-      </header>
-
-      <ul>
-        <TMPL_LOOP Channels>
-          <li class="contributor"><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title>"><TMPL_VAR name></a></li>
-        </TMPL_LOOP>
-      </ul>
-
-      <div class="clearfix"></div>
       <a href="#top" class="top">&uarr;</a>
     </section>
 
