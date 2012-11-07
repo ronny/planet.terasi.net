@@ -1,4 +1,11 @@
-Flask
-mock
+Django
+psycopg2
+dj-database-url
+South
+
+feedparser
+
 gevent
 gunicorn
+
+mock
