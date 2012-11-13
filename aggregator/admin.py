@@ -1,10 +1,10 @@
 from django.contrib import admin
-from aggregator.models import Feed, Article
+from aggregator.models import Feed, Entry
 
 class FeedAdmin(admin.ModelAdmin):
     pass
 admin.site.register(Feed, FeedAdmin)
 
-class ArticleAdmin(admin.ModelAdmin):
+class EntryAdmin(admin.ModelAdmin):
     pass
-admin.site.register(Article, ArticleAdmin)
+admin.site.register(Entry, EntryAdmin)

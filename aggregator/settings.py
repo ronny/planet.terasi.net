@@ -80,7 +80,8 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'compressor.finders.CompressorFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -124,6 +125,11 @@ TEMPLATE_DIRS = (
 #     "django.contrib.messages.context_processors.messages",
 # )
 
+COMPRESS_PRECOMPILERS = (
+    # ('text/coffeescript', 'coffee --compile --stdio'),
+    ('text/x-scss', 'scss {infile} {outfile}'),
+)
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,6 +140,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'south',
+    'gunicorn',
+    'compressor',
 
     'aggregator',
 )

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if entries|length > 0 %}
+  {% for entry in entries %}
+    <p>{{ entry }}</p>
+  {% endfor %}
+{% else %}
+  <p>No entries.</p>
+{% endif %}
+{% endblock content %}
