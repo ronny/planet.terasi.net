@@ -3,9 +3,21 @@
 {% block content %}
 {% if entries|length > 0 %}
   {% for entry in entries %}
-    <p>{{ entry }}</p>
+    <article id="entry-{{ entry.id }}" data-guid="{{ entry.guid }}">
+      <header>
+        <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+        <p class="meta">
+          <span class="feed">{{ entry.feed.title }}</span>
+          <span class="author">{{ entry.authors }}</span>
+          <time class="publication-date timeago" datetime="{{entry.pub_date|date:"c"}}">{{ entry.pub_date|date:"D d M Y H:i:s O" }}</time>
+        </p>
+      </header>
+      <div class="content">
+        {{ entry.content|safe }}
+      </div>
+    </article>
   {% endfor %}
 {% else %}
-  <p>No entries.</p>
+  <p>Well, whaddya know, the internet pipes are stuck. There are no entries.</p>
 {% endif %}
 {% endblock content %}

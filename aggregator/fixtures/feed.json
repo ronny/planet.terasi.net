@@ -1,0 +1,964 @@
+[
+    {
+        "pk": 1,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://ronny.haryan.to/rss",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 2,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://priyadi.net/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 3,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://yulian.firdaus.or.id/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://bennychandra.com/feed",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 5,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://ryosaeba.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 6,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://idban.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 7,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://andika-lives-here.blogspot.com/atom.xml",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 8,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://direktif.web.id/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 9,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/OrangescaleJournal",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 10,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://harry.sufehmi.com/category/teknoblogia/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 11,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://ariya.ofilabs.com/feed",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 12,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/kyantonius-terasi",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 13,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://rahard.wordpress.com/category/teknologi-informasi/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 14,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://lazuardi.blogsome.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 15,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds2.feedburner.com/gurnadi-teknoblogia",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 16,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/endagoblogmedia",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 17,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://journal.avianto.com/feed/atom/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 18,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://jalansutera.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 19,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://khairulu.blogsome.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 20,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/wpram",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 21,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://doeljoni.blogsome.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 22,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://blogombal.org/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 23,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/Blogversive",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 24,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://pipit.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 25,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/bujursangkar",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 26,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://maseko.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 27,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://id.wahyu.com/feed",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 28,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://www.rendymaulana.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 29,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://suryana.or.id/category/planet/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 30,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/iwinnotesblogspot",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 31,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://steven.blogs.masterweb.net/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 32,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://aris.pituruh.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 33,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://agusset.blogspot.com/atom.xml",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 34,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/MerdekaBlog",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 35,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/satukubik",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 36,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds2.feedburner.com/rezmuh",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 37,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://gobzip.blogsome.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 38,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/sarapanekonomi",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 39,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://gadget.rootbox.or.id/node/feed",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 40,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://budiputra.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 41,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://solyaris.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 42,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://julius.sirait.net/rss",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 43,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://kuncoro.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 44,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://kun.co.ro/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 45,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://www.itpin.com/blog/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 46,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://blogindonesia.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 47,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://journal.firmanfirdaus.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 48,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://romisatriawahono.net/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 49,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://alexbudiyanto.web.id/feed",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 50,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://nurulwibawacahya.blogspot.com/rss.xml",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 51,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://vavai.com/tag/planet-terasi-aggregator/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 52,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://ip.sg.or.id/feed/atom/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 53,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://yahyakurniawan.net/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 54,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://okto.silaban.net/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 55,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://kyantonius.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 56,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://loopingterus.blogspot.com/feeds/posts/default?alt=rss",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 57,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://akuinginhijau.org/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 58,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://takdir.blogspot.com/feeds/posts/default?alt=rss",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 59,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/Hendy",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 60,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://ivan.lanin.org/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 61,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://layangan.com/asfik/blog/feed",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 62,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/web/jxQy",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 63,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://www.hardjono.net/blogs/teknoblog/?feed=rss2",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 64,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://wiryanto.wordpress.com/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 65,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://affanzbasalamah.wordpress.com/category/computer-networks/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 66,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://qobian.com/denny/index.php?/feeds/index.rss2",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 67,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://didats.net/category/technology/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 68,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/TemanMacet",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 69,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/Navinot",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 70,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://ngadimin.org/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 71,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://aulia.posterous.com/rss.xml",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 72,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://hakitree.posterous.com/rss.xml",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 73,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://dailysocial.net/feed/",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    },
+    {
+        "pk": 74,
+        "model": "aggregator.feed",
+        "fields": {
+            "last_fetched": null,
+            "title": "",
+            "url": "http://feeds.feedburner.com/gajeto",
+            "icon_url": "",
+            "site_url": "",
+            "etag": "",
+            "last_modified": null
+        }
+    }
+]
