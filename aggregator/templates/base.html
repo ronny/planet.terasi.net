@@ -58,9 +58,10 @@
             <a href="http://ronny.haryan.to/">Ronny Haryanto</a>.</p>
 
           <p>Planet Terasi is updated every hour and was most recently updated
-             <time class="last-updated timeago"
+              {% if latest_update %}<time class="last-updated timeago"
                    datetime="{{ latest_update.timestamp|date:"c" }}"
-             >{{ latest_update.timestamp|date:"D d M Y H:i:s O" }}</time>.
+             >{{ latest_update.timestamp|date:"D d M Y H:i:s O" }}</time>{% else %}
+             never{% endif %}.
           </p>
         </section>
 

@@ -2,7 +2,7 @@
 import os
 APP_ROOT = os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = True
+DEBUG = (os.environ.get('APP_ENV', 'development') == 'development')
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
