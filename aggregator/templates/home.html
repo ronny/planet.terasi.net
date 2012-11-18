@@ -7,9 +7,10 @@
       <header>
         <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
         <p class="meta">
-          <span class="feed">{{ entry.feed.title }}</span>
+          <span class="feed"><a href="{{ entry.feed.site_url }}">{{ entry.feed.title }}</a></span>
           <span class="author">{{ entry.authors }}</span>
-          <time class="publication-date timeago" datetime="{{entry.pub_date|date:"c"}}">{{ entry.pub_date|date:"D d M Y H:i:s O" }}</time>
+          <time class="publication-date" datetime="{{entry.pub_date|date:"c"}}">{{ entry.pub_date|date:"D d M" }}</time>
+          <time class="timeago publication-timestamp" datetime="{{entry.pub_date|date:"c"}}">{{ entry.pub_date|date:"d M H:i O" }}</time>
         </p>
       </header>
       <div class="content">

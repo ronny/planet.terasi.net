@@ -12,16 +12,19 @@ logger = logging.getLogger(__name__)
 def update_all():
     start = datetime.datetime.now()
     logger.info("update_all: started %s", start)
+    success = failed = 0
     for feed in Feed.objects.all().order_by('id'):
         try:
             update(feed)
+            success += 1
         except Exception as e:
+            failed += 1
             logger.warn("Exception while updating feed %s: %s", feed.url, e)
             feed.last_error = e
             feed.save()
             raise
     finish = datetime.datetime.now()
-    logger.info("update_all: finished %s - %s", finish, (finish - start))
+    logger.info("update_all: finished %s - %s, success=%d, failed=%d", finish, (finish - start), success, failed)
 
 
 def update(feed):
@@ -58,7 +61,7 @@ def __update_feed_attributes(feed, parsed):
     feed.last_modified = __datetime(parsed.get('modified_parsed', None))
     feed.last_fetched = django.utils.timezone.now()
     feed.last_status = parsed.get('status', '')
-    if feed.last_status in ['301', '302']:
+    if feed.last_status in [301, 302, '301', '302']:
         href = parsed.get('href', None)
         if href is not None:
             logger.info("Updating feed url from %s to %s", feed.url, href)
@@ -107,3 +110,7 @@ def __datetime(struct_time):
     # http://packages.python.org/feedparser/date-parsing.html#supporting-additional-date-formats
     naive = datetime.datetime.fromtimestamp(time.mktime(struct_time))
     return naive.replace(tzinfo=django.utils.timezone.utc)
+
+
+if __name__ == '__main__':
+    update_all()

@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 
 
@@ -5,11 +7,15 @@ class Update(models.Model):
     timestamp = models.DateTimeField()
 
     def __unicode__(self):
-        return timestamp
+        return "%s" % (self.timestamp,)
+
+    class Meta:
+        get_latest_by = 'timestamp'
 
 
 class Feed(models.Model):
     url = models.URLField()
+    name = models.CharField(max_length=200)
     title = models.CharField(max_length=200, blank=True, default='')
 
     site_url = models.URLField(blank=True, default='')

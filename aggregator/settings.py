@@ -35,7 +35,7 @@ TIME_ZONE = 'Asia/Jakarta'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'id'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
@@ -104,6 +104,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.gzip.GZipMiddleware',
 )
 
 ROOT_URLCONF = 'aggregator.urls'
@@ -117,15 +118,17 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-# TEMPLATE_CONTEXT_PROCESSORS = (
-#     "django.contrib.auth.context_processors.auth",
-#     "django.core.context_processors.debug",
-#     "django.core.context_processors.i18n",
-#     "django.core.context_processors.media",
-#     "django.core.context_processors.static",
-#     "django.core.context_processors.tz",
-#     "django.contrib.messages.context_processors.messages",
-# )
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+
+    "aggregator.context_processors.common",
+)
 
 COMPRESS_PRECOMPILERS = (
     # ('text/coffeescript', 'coffee --compile --stdio'),
