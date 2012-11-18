@@ -3,7 +3,7 @@
 *~
 
 .sass-cache/
-cache/
+./cache/
 
 # These are automatically generated from templates:
 static/*.html
