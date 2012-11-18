@@ -130,6 +130,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "aggregator.context_processors.common",
 )
 
+COMPRESS_OFFLINE = True
 COMPRESS_PRECOMPILERS = (
     # ('text/coffeescript', 'coffee --compile --stdio'),
     ('text/x-scss', 'scss {infile} {outfile}'),
