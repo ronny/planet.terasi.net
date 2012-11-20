@@ -1,0 +1,116 @@
+$colour-background: rgb(248, 248, 248);
+$colour-highlight: rgb(200, 10, 10);
+$colour-line: rgb(220, 220, 220);
+
+$font-heading: "ff-enzo-web-1", "ff-enzo-web-2", "Helvetica Neue", sans-serif;
+$font-body: "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Helvetica Neue", sans-serif;
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+body {
+  padding: 1em 0;
+  background-color: $colour-background;
+  font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-family: $font-heading;
+}
+
+a {
+  color: $colour-highlight;
+}
+a:hover {
+  color: lighten($colour-highlight, 20%);
+}
+
+header.site {
+  margin: 0.5em 0 2em 0;
+  border-bottom: 1px solid $colour-line;
+
+  h1.site-title {
+    text-transform: uppercase;
+    font-weight: 600;
+
+    .first-word {
+      font-weight: 100;
+    }
+  }
+  p.site-subtitle {
+    font-family: $font-heading;
+    font-size: 1.5em;
+  }
+}
+
+article {
+  margin: 2em auto;
+  position: relative;
+  min-height: 200px;
+
+  header {
+    h2 {
+      margin-bottom: 0.2em;
+      font-size: 3em;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .meta {
+      $color-meta: lighten(rgb(51, 51, 51), 50%);
+      color: $color-meta;
+      font-weight: 600;
+      font-size: 18px;
+
+      .feed {
+        a {
+          color: $color-meta;
+        }
+      }
+      .feed:after, .author:after {
+        content: " – ";
+      }
+      .publication-date {
+        display: block;
+        position: absolute;
+        top: 46px;
+        left: -120px;
+        width: 140px;
+        height: 60px;
+        color: $colour-background;
+        font-size: 1em;
+        background-color: $colour-highlight;
+        padding: 20px;
+        text-align: center;
+        font-weight: 100;
+        font-family: $font-heading;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      }
+
+    }
+  }
+
+  .content {
+    & > * {
+      max-width: 100% !important;
+    }
+  }
+}
+
+footer.site {
+  margin-top: 5em;
+  border-top: 1px solid $colour-line;
+  padding-top: 2em;
+}
