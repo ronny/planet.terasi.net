@@ -1,4 +1,4 @@
-Django==1.4.2
+https://www.djangoproject.com/download/1.5a1/tarball/
 South==0.7.6
 distribute==0.6.28
 dj-database-url==0.2.1

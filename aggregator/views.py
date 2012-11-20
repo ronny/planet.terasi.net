@@ -1,7 +1,7 @@
 import datetime
 
 from django import utils
-from django.http import HttpResponse
+from django.http import HttpResponse, StreamingHttpResponse
 from django.shortcuts import render_to_response, redirect
 from django.template import RequestContext
 from django.views.decorators.http import require_safe, require_GET
@@ -37,11 +37,16 @@ def update(request):
         latest_update = Update.objects.latest()
     except Update.DoesNotExist:
         pass
+
     if latest_update is None or (latest_update.timestamp <= (utils.timezone.now() - datetime.timedelta(hours=1))):
-        feed_updater.update_all()
+        response = StreamingHttpResponse(streaming_content=feed_updater.update_all(with_feedback=True),
+            content_type='text/plain', status=200)
         if latest_update is not None:
             latest_update.timestamp = utils.timezone.now()
             latest_update.save()
         else:
             Update.objects.create(timestamp=utils.timezone.now())
-    return HttpResponse('Wat?')
+    else:
+        response = HttpResponse(content='Wat?', content_type='text/plain', status=200)
+
+    return response

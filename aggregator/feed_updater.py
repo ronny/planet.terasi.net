@@ -9,12 +9,14 @@ from aggregator.models import Feed, Entry
 feedparser.USER_AGENT = "Planet Terasi/3.0 +http://planet.terasi.net/"
 logger = logging.getLogger(__name__)
 
-def update_all():
+def update_all(with_feedback=False):
     start = datetime.datetime.now()
     logger.info("update_all: started %s", start)
     success = failed = 0
     for feed in Feed.objects.all().order_by('id'):
         try:
+            if with_feedback:
+                yield "%s - %s\n" % (datetime.datetime.now(), feed.url,)
             update(feed)
             success += 1
         except Exception as e:
