@@ -13,6 +13,7 @@ Modifying assets
 
 - modify files in aggregator/static/
 - python manage.py collectstatic
+- python manage.py compress --force
 - git commit
 - git push origin master
 
