@@ -106,6 +106,13 @@ article {
     & > * {
       max-width: 100% !important;
     }
+
+    .related_post_title,
+    .related_post,
+    .feedflare
+    {
+      display: none;
+    }
   }
 }
 
