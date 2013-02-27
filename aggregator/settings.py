@@ -14,6 +14,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+ALLOWED_HOSTS = ['planet.terasi.net', 'planet-terasi.herokuapp.com']
 
 DATABASES = {
     'default': {
