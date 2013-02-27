@@ -2,7 +2,10 @@
 import os
 APP_ROOT = os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = (os.environ.get('APP_ENV', 'development') == 'development')
+# Helper lambda for gracefully degrading environmental variables:
+env = lambda e, d: os.environ[e] if os.environ.has_key(e) else d
+
+DEBUG = (env('APP_ENV', 'development') == 'development')
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -87,7 +90,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = os.environ.get('SECRET_KEY', 'super mango 99 balloons above the sea, look!')
+SECRET_KEY = env('SECRET_KEY', 'super mango 99 balloons above the sea, look!')
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -151,6 +154,15 @@ INSTALLED_APPS = (
 
     'aggregator',
 )
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = env('EMAIL_HOST', 'smtp.gmail.com')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', '')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER', '')
+EMAIL_PORT = env('EMAIL_PORT', 587)
+EMAIL_SUBJECT_PREFIX = '[planet-terasi %s] ' % env('APP_ENV', 'unknown-env')
+EMAIL_USE_TLS = True
+SERVER_EMAIL = EMAIL_HOST_USER
 
 LOGGING = {
     'version': 1,
