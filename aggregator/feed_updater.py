@@ -90,7 +90,13 @@ def __update_entry(feed, parsed_entry):
     logger.info("entry: (%s) %s", new, entry.url)
 
 def __content(parsed_entry):
-    return parsed_entry.get('content', [{}])[0]
+    return parsed_entry.get('content', [__description(parsed_entry)])[0]
+
+def __description(parsed_entry):
+    return {
+        'type': 'text/html',
+        'value': parsed_entry.get('description', ''),
+    }
 
 def __guid(parsed_entry):
     return parsed_entry.get('id', parsed_entry.get('link', None))
