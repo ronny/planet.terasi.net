@@ -1,4 +1,4 @@
-django>=1.5.1
+django >=1.5.5, <1.6
 South>=0.7.6
 distribute>=0.6.40
 dj-database-url>=0.2.1
