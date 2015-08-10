@@ -6,6 +6,7 @@ from django.shortcuts import render_to_response, redirect
 from django.template import RequestContext
 from django.views.decorators.http import require_safe, require_GET
 from django.views.decorators.gzip import gzip_page
+from django.core import serializers
 
 from aggregator import feed_updater
 # from aggregator.decorators import require_secret_handshake
@@ -14,10 +15,20 @@ from aggregator.models import Entry, Update, Feed
 @gzip_page
 @require_safe
 def home(request):
-    latest_entries = Entry.objects.all().order_by('-pub_date')[:50]
-    return render_to_response('home.html',
-        {'entries': latest_entries},
+    return render_to_response(
+        'home.html',
+        {},
         context_instance=RequestContext(request)
+    )
+
+@gzip_page
+@require_safe
+def entries(request):
+    latest_entries = Entry.objects.all().order_by('-pub_date')[:10]
+    # TODO: how the fuck do you do this with JsonResponse?!
+    return HttpResponse(
+        serializers.serialize('json', latest_entries),
+        content_type="application/json"
     )
 
 @gzip_page
@@ -26,7 +37,7 @@ def opml(request):
     return render_to_response('opml.xml',
         {'feeds': Feed.objects.all().order_by('id')},
         context_instance=RequestContext(request),
-        mimetype="application/xml"
+        content_type="application/xml"
     )
 
 @require_GET

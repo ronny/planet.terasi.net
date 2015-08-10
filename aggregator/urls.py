@@ -8,6 +8,7 @@ from aggregator.feed import LatestEntriesFeed, AtomLatestEntriesFeed
 
 urlpatterns = patterns('',
     url(r'^$', 'aggregator.views.home', name='home'),
+    url(r'^entries.json$', 'aggregator.views.entries', name='entries'),
     url(r'^update/$', 'aggregator.views.update', name='update'),
     url(r'^feed/$', LatestEntriesFeed(), name='feed'),
     url(r'^rss20.xml$', LatestEntriesFeed(), name='rss'),

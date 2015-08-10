@@ -5,6 +5,7 @@
 .sass-cache/
 ./cache/
 
-# These are automatically generated from templates:
-static/*.html
-static/*.xml
+webpack-stats.json
+
+aggregator/static/bundles/
+node_modules

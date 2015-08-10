@@ -3,6 +3,7 @@ Django==1.8.3
 django-appconf==1.0.1
 django-compressor==1.5
 django-pylibmc==0.6.0
+django-webpack-loader==0.1.2.1
 feedparser==5.2.1
 funcsigs==0.4
 gevent==1.0.2

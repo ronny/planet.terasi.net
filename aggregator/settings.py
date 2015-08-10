@@ -202,7 +202,16 @@ INSTALLED_APPS = (
     'compressor',
 
     'aggregator',
+
+    'webpack_loader',
 )
+
+WEBPACK_LOADER = {
+    'BUNDLE_DIR_NAME': 'bundles/', # must end with slash
+    'STATS_FILE': 'webpack-stats.json',
+    'POLL_DELAY': 0.2,
+    'IGNORE': ['.+\.hot-update.js', '.+\.map']
+}
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = env('EMAIL_HOST', 'smtp.gmail.com')
