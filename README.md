@@ -36,5 +36,6 @@ pip install virtualenvwrapper
 # update shell to source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv planet-terasi
 workon planet-terasi
+brew install libmemcached    # for pylibmc
 pip install -r requirements.txt
 ```

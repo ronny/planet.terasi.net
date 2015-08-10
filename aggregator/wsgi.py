@@ -26,3 +26,7 @@ application = get_wsgi_application()
 # Apply WSGI middleware here.
 from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(application)
+
+# Fix django closing connection to MemCachier after every request (#11331)
+from django.core.cache.backends.memcached import BaseMemcachedCache
+BaseMemcachedCache.close = lambda self, **kwargs: None
