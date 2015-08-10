@@ -90,6 +90,10 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = env('SECRET_KEY', 'super mango 99 balloons above the sea, look!')
 
@@ -101,6 +105,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'django.middleware.cache.UpdateCacheMiddleware', # must be first
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -109,7 +114,50 @@ MIDDLEWARE_CLASSES = (
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.gzip.GZipMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware', # must be last
 )
+
+os.environ['MEMCACHE_SERVERS'] = os.environ.get('MEMCACHIER_SERVERS', '').replace(',', ';')
+os.environ['MEMCACHE_USERNAME'] = os.environ.get('MEMCACHIER_USERNAME', '')
+os.environ['MEMCACHE_PASSWORD'] = os.environ.get('MEMCACHIER_PASSWORD', '')
+
+CACHES = {
+    'default': {
+        # Use pylibmc
+        'BACKEND': 'django_pylibmc.memcached.PyLibMCCache',
+
+        # Use binary memcache protocol (needed for authentication)
+        'BINARY': True,
+
+        # TIMEOUT is not the connection timeout! It's the default expiration
+        # timeout that should be applied to keys! Setting it to `None`
+        # disables expiration.
+        'TIMEOUT': None,
+
+        'OPTIONS': {
+            # Enable faster IO
+            'no_block': True,
+            'tcp_nodelay': True,
+
+            # Keep connection alive
+            'tcp_keepalive': True,
+
+            # Timeout for set/get requests
+            '_poll_timeout': 2000,
+
+            # Use consistent hashing for failover
+            'ketama': True,
+
+            # Configure failover timings
+            'connect_timeout': 2000,
+            'remove_failed': 4,
+            'retry_timeout': 2,
+            'dead_timeout': 10
+        }
+    }
+}
+
+CACHE_MIDDLEWARE_SECONDS = 3600
 
 ROOT_URLCONF = 'aggregator.urls'
 
@@ -134,6 +182,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "aggregator.context_processors.common",
 )
 
+
 COMPRESS_OFFLINE = True
 COMPRESS_PRECOMPILERS = (
     # ('text/coffeescript', 'coffee --compile --stdio'),
@@ -149,7 +198,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
-    'south',
     'gunicorn',
     'compressor',
 

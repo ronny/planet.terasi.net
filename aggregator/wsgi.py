@@ -24,5 +24,9 @@ from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 
 # Apply WSGI middleware here.
-# from helloworld.wsgi import HelloWorldApplication
-# application = HelloWorldApplication(application)
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(application)
+
+# Fix django closing connection to MemCachier after every request (#11331)
+from django.core.cache.backends.memcached import BaseMemcachedCache
+BaseMemcachedCache.close = lambda self, **kwargs: None
