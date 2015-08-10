@@ -4,7 +4,6 @@
 
 .sass-cache/
 ./cache/
-aggregator/public/CACHE
 
 # These are automatically generated from templates:
 static/*.html
