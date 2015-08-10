@@ -9,10 +9,7 @@ Deploy to production
 
 ```bash
 # (push changes in master to origin)
-git checkout production
-git merge origin/master
-git push origin production
-git push -f heroku production:master
+git push -f heroku master
 ```
 
 
