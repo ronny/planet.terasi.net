@@ -12,7 +12,7 @@ Deploy to production
 git checkout production
 git merge origin/master
 git push origin production
-git push heroku production:master
+git push -f heroku production:master
 ```
 
 
