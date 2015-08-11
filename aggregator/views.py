@@ -26,7 +26,7 @@ def opml(request):
     return render_to_response('opml.xml',
         {'feeds': Feed.objects.all().order_by('id')},
         context_instance=RequestContext(request),
-        mimetype="application/xml"
+        content_type="application/xml"
     )
 
 @require_GET
