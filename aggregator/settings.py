@@ -114,7 +114,8 @@ MIDDLEWARE_CLASSES = (
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.gzip.GZipMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware', # must be last
+    'django.middleware.cache.FetchFromCacheMiddleware', # must be last-ish
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 )
 
 os.environ['MEMCACHE_SERVERS'] = os.environ.get('MEMCACHIER_SERVERS', '').replace(',', ';')
@@ -212,6 +213,14 @@ EMAIL_PORT = env('EMAIL_PORT', 587)
 EMAIL_SUBJECT_PREFIX = '[planet-terasi %s] ' % env('APP_ENV', 'unknown-env')
 EMAIL_USE_TLS = True
 SERVER_EMAIL = EMAIL_HOST_USER
+
+ROLLBAR = {
+    'access_token': env('ROLLBAR_ACCESS_TOKEN', ''),
+    'endpoint': env('ROLLBAR_ENDPOINT', ''),
+    'environment': 'development' if DEBUG else 'production',
+    'branch': 'master',
+    'root': APP_ROOT,
+}
 
 LOGGING = {
     'version': 1,
