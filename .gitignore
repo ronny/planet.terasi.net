@@ -8,3 +8,5 @@
 # These are automatically generated from templates:
 static/*.html
 static/*.xml
+
+node_modules

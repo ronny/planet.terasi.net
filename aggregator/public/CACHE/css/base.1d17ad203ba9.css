@@ -1,0 +1,92 @@
+@charset "UTF-8";
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: 2em;
+    margin-right: 2em; } }
+body {
+  padding: 1em 0;
+  background-color: #f8f8f8;
+  font-family: "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-family: "ff-enzo-web-1", "ff-enzo-web-2", "Helvetica Neue", sans-serif; }
+
+a {
+  color: #c80a0a; }
+
+a:hover {
+  color: #f64242; }
+
+p {
+  margin: 0 0 18px; }
+
+header.site {
+  margin: 0.5em 0 2em 0;
+  border-bottom: 1px solid gainsboro; }
+  header.site h1.site-title {
+    text-transform: uppercase;
+    font-weight: 600; }
+    header.site h1.site-title .first-word {
+      font-weight: 100; }
+  header.site p.site-subtitle {
+    font-family: "ff-enzo-web-1", "ff-enzo-web-2", "Helvetica Neue", sans-serif;
+    font-size: 1.5em; }
+
+article {
+  margin: 2em auto;
+  position: relative;
+  min-height: 200px; }
+  article header h2 {
+    margin-bottom: 0.2em;
+    font-size: 3em;
+    line-height: 48px; }
+    article header h2 a:hover {
+      text-decoration: none; }
+  article header .meta {
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 18px; }
+    article header .meta .feed a {
+      color: #b3b3b3; }
+    article header .meta .feed:after, article header .meta .author:after {
+      content: " – "; }
+    article header .meta .publication-date {
+      display: block;
+      position: absolute;
+      top: 46px;
+      left: -120px;
+      width: 140px;
+      height: 60px;
+      color: #f8f8f8;
+      font-size: 1em;
+      background-color: #c80a0a;
+      padding: 20px;
+      text-align: center;
+      font-weight: 100;
+      font-family: "ff-enzo-web-1", "ff-enzo-web-2", "Helvetica Neue", sans-serif;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+  article .content > * {
+    max-width: 100% !important; }
+  article .content .related_post_title,
+  article .content .related_post,
+  article .content .feedflare {
+    display: none; }
+
+footer.site {
+  margin-top: 5em;
+  border-top: 1px solid gainsboro;
+  padding-top: 2em; }
+
+/*# sourceMappingURL=tmpUPTS8P.css.map */
