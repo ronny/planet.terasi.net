@@ -10,3 +10,5 @@ static/*.html
 static/*.xml
 
 node_modules
+aggregator/static/bundles
+aggregator/public/bundles
