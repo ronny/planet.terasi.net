@@ -216,7 +216,7 @@ SERVER_EMAIL = EMAIL_HOST_USER
 
 ROLLBAR = {
     'access_token': env('ROLLBAR_ACCESS_TOKEN', ''),
-    'endpoint': env('ROLLBAR_ENDPOINT', ''),
+    # 'endpoint': env('ROLLBAR_ENDPOINT', ''),
     'environment': 'development' if DEBUG else 'production',
     'branch': 'master',
     'root': APP_ROOT,
