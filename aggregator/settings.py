@@ -6,6 +6,10 @@ APP_ROOT = os.path.abspath(os.path.dirname(__file__))
 env = lambda e, d: os.environ[e] if os.environ.has_key(e) else d
 
 DEBUG = (env('APP_ENV', 'development') == 'development')
+# If setting DEBUG to False in development, ALLOWED_HOSTS need to be *
+# ALLOWED_HOSTS = '*'
+ALLOWED_HOSTS = ['planet.terasi.net', 'planet-terasi.herokuapp.com']
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -14,7 +18,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-ALLOWED_HOSTS = ['planet.terasi.net', 'planet-terasi.herokuapp.com']
 
 DATABASES = {
     'default': {

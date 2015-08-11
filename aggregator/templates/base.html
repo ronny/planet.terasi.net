@@ -6,23 +6,16 @@
   <meta charset="utf-8">
   <title>Planet Terasi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" href="{% url "feed" %}">
+  <link rel="alternate" type="application/atom+xml" href="{% url "atom" %}">
+  <link rel="shortcut icon" href="{% static "img/favicon.png" %}">
 
   {% compress css %}
   <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" charset="utf-8">
   <link href="{% static "css/base.scss" %}" rel="stylesheet" type="text/x-scss" charset="utf-8">
   {% endcompress %}
 
-  <link rel="alternate" type="application/rss+xml" href="{% url "feed" %}">
-  <link rel="alternate" type="application/atom+xml" href="{% url "atom" %}">
-
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <link rel="shortcut icon" href="{% static "img/favicon.png" %}">
-
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "img/apple-touch-icon-144-precomposed.png" %}">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "img/apple-touch-icon-114-precomposed.png" %}">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "img/apple-touch-icon-72-precomposed.png" %}">
-  <link rel="apple-touch-icon-precomposed" href="{% static "img/apple-touch-icon-57-precomposed.png" %}">
-
   {% compress js %}
   <script type="text/javascript">
     (function() {
@@ -103,6 +96,7 @@
     </div>
     <div class="span2"></div>
   </div>
+
   {% compress js %}
   <script src="{% static "js/jquery-1.8.2.js" %}"></script>
   <script src="{% static "js/jquery.timeago.js" %}"></script>
